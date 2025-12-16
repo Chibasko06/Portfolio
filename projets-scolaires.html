@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Projets scolaires</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="./accueil.html">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Mon Portfolio</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Navigation principale">
+        <a href="./parcours.html">Parcours</a>
+        <a href="./projets-scolaires.html" aria-current="page">Projets scolaires</a>
+        <a href="./projets-perso.html">Projets perso</a>
+        <a href="./cv-lettre.html">CV & Lettre</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="pagehead">
+      <h1>Projets scolaires</h1>
+      <p class="muted">
+        Une sélection de projets réalisés en cours (SAE/TP), avec objectifs, technos et résultats.
+      </p>
+    </section>
+
+    <!-- Filtres simples (visuels) -->
+    <section class="card">
+      <div class="filters">
+        <span class="muted">Filtres :</span>
+        <button class="chip is-active" data-filter="all">Tous</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="bdd">BDD</button>
+        <button class="chip" data-filter="reseau">Réseau</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="projects projects-list" id="projects">
+        <!-- PROJET 1 -->
+        <article class="card proj" data-tags="web bdd">
+          <h3>[SAE] Plateforme / Site PHP</h3>
+          <p class="muted block">
+            <strong>Objectif :</strong> [ex : site dynamique + gestion utilisateurs]<br />
+            <strong>Ce que j’ai fait :</strong> [ex : pages, formulaires, sessions, MVC]<br />
+            <strong>Résultat :</strong> [ex : fonctionnalités clés / démo]
+          </p>
+          <div class="tagrow">
+            <span class="tag">PHP</span><span class="tag">HTML/CSS</span><span class="tag">SQL</span>
+          </div>
+          <p class="actions">
+            <a class="btn" href="#">Code / GitHub</a>
+            <a class="btn" href="#">Détails (optionnel)</a>
+          </p>
+        </article>
+
+        <!-- PROJET 2 -->
+        <article class="card proj" data-tags="bdd">
+          <h3>[TP/SAE] Base de données + triggers</h3>
+          <p class="muted block">
+            <strong>Objectif :</strong> [ex : automatiser des traitements via triggers]<br />
+            <strong>Ce que j’ai fait :</strong> [procédures, fonctions, vues, triggers]<br />
+            <strong>Résultat :</strong> [ex : base cohérente + règles automatiques]
+          </p>
+          <div class="tagrow">
+            <span class="tag">SQL</span><span class="tag">PL/SQL</span><span class="tag">Triggers</span>
+          </div>
+          <p class="actions">
+            <a class="btn" href="#">Scripts</a>
+          </p>
+        </article>
+
+        <!-- PROJET 3 -->
+        <article class="card proj" data-tags="reseau">
+          <h3>[TP] Pare-feu / iptables</h3>
+          <p class="muted block">
+            <strong>Objectif :</strong> [ex : sécuriser des flux entre machines]<br />
+            <strong>Ce que j’ai fait :</strong> [règles INPUT/OUTPUT/FORWARD + tests]<br />
+            <strong>Résultat :</strong> [ex : accès web OK, ports bloqués, ping contrôlé]
+          </p>
+          <div class="tagrow">
+            <span class="tag">Linux</span><span class="tag">iptables</span><span class="tag">Réseau</span>
+          </div>
+          <p class="actions">
+            <a class="btn" href="#">Compte rendu</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> [TON NOM] — Portfolio</span>
+      <span class="muted"><a href="index.html">Retour accueil</a></span>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
