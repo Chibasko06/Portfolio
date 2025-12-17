@@ -280,3 +280,19 @@ footer{
   gap:10px;
   justify-content:space-between;
 }
+
+/* Logo projet (Chibasko Games) */
+.project-logo{
+  width:2.25rem;          /* ≈ 36px */
+  height:auto;            /* respecte le ratio */
+  vertical-align:middle;
+  margin-left:.2rem;
+  border-radius:50%;
+}
+
+/* Ajustement mobile */
+@media (max-width:600px){
+  .project-logo{
+    width:2rem;           /* ≈ 32px */
+  }
+}
